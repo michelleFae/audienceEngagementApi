@@ -1,0 +1,8 @@
+dist/
+node_modules/
+.env
+package-lock.json
+services/attendees_api
+services/events_api
+services/reviews_api
+.DS_Store

@@ -1,0 +1,37 @@
+{
+  "name": "gateway",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gateway.js",
+  "scripts": {
+    "start-gateway": "babel-node gateway.js",
+    "start-service-attendees-api": "babel-node services/attendees_api/index.js",
+    "start-service-events-api": "babel-node services/events_api/index.js",
+    "start-service-reviews-api": "babel-node services/reviews_api/index.js",
+    "start-services": "concurrently \"npm:start-service-*\"",
+    "postinstall": "rm -r node_modules/apollo-language-server/node_modules/graphql"
+  },
+  "devDependencies": {
+    "@apollo/rover":"^0.4.3",
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/node": "^7.16.8",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/preset-env": "^7.16.11",
+    "concurrently": "latest"
+  },
+  "dependencies": {
+    "@apollo/federation": "^0.35.1",
+    "@apollo/gateway": "^0.48.1",
+    "apollo": "^2.33.9",
+    "apollo-language-server": "^1.26.3",
+    "apollo-server": "^3.6.3",
+    "dotenv": "^16.0.0",
+    "graphql": "^15.3.0",
+    "@graphql-tools/schema": "^8.3.2"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
