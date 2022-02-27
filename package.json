@@ -5,9 +5,9 @@
   "main": "gateway.js",
   "scripts": {
     "start-gateway": "babel-node gateway.js",
-    "start-service-attendees-api": "babel-node services/attendees_api/index.js",
-    "start-service-events-api": "babel-node services/events_api/index.js",
-    "start-service-reviews-api": "babel-node services/reviews_api/index.js",
+    "start-service-attendees-api": "babel-node services/attendeesApi/index.js",
+    "start-service-events-api": "babel-node services/eventsApi/index.js",
+    "start-service-reviews-api": "babel-node services/reviewsApi/index.js",
     "start-services": "concurrently \"npm:start-service-*\"",
     "postinstall": "rm -r node_modules/apollo-language-server/node_modules/graphql"
   },
