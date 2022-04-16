@@ -2,7 +2,5 @@ dist/
 node_modules/
 .env
 package-lock.json
-services/attendeesApi
-services/eventsApi
-services/reviewsApi
 .DS_Store
+dump.rdb

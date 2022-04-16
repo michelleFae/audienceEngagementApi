@@ -5,14 +5,14 @@
   "main": "gateway.js",
   "scripts": {
     "start-gateway": "babel-node gateway.js",
-    "start-service-attendees-api": "babel-node services/attendeesApi/index.js",
+    "start-service-users-api": "babel-node services/usersApi/index.js",
     "start-service-events-api": "babel-node services/eventsApi/index.js",
-    "start-service-reviews-api": "babel-node services/reviewsApi/index.js",
+    "start-service-user-activity-api": "babel-node services/userActivityApi/index.js",
     "start-services": "concurrently \"npm:start-service-*\"",
     "postinstall": "rm -r node_modules/apollo-language-server/node_modules/graphql"
   },
   "devDependencies": {
-    "@apollo/rover":"^0.4.3",
+    "@apollo/rover": "^0.4.3",
     "@babel/cli": "^7.17.6",
     "@babel/core": "^7.17.5",
     "@babel/node": "^7.16.8",
@@ -23,12 +23,16 @@
   "dependencies": {
     "@apollo/federation": "^0.35.1",
     "@apollo/gateway": "^0.48.1",
-    "apollo": "^2.33.9",
-    "apollo-language-server": "^1.26.3",
+    "@graphql-tools/schema": "^8.3.2",
+    "apollo": "^2.11.1",
+    "apollo-language-server": "^1.21.3",
     "apollo-server": "^3.6.3",
+    "async-lock": "^1.3.1",
     "dotenv": "^16.0.0",
     "graphql": "^15.3.0",
-    "@graphql-tools/schema": "^8.3.2"
+    "graphql-redis-subscriptions":"^2.4.2",
+    "redis":"^4.0.6",
+    "graphql-depth-limit":"^1.1.0"
 
   },
   "keywords": [],
