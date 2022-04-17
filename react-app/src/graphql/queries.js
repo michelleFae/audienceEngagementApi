@@ -4,7 +4,7 @@ import { UserActivityFields } from "./fragments";
 
 export const GetUserActivities = gql`
   query GetUserActivity {
-    getUserActivites {
+    getUserActivites (last: 50, userId: null, eventId: null) {
       ...UserActivityFields
     }
   }

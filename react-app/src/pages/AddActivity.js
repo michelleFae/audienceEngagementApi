@@ -6,7 +6,7 @@ import { AddUserActivity as AddUserActivityMutation } from "../graphql/mutations
 
 function AddActivity() {
   const [eventId, setEventId] = useState("");
-  const [activity, setActivity] = useState("");
+  const [activity, setActivity] = useState("PARTY_FACE");
   const [userId, setUserId] = useState("");
   const [completedMessage, setCompletedMessage] = useState("");
 
@@ -25,10 +25,10 @@ function AddActivity() {
     <div>
       <nav>
         <p>
-          <Link to="/">&larr; Back Home</Link>
+        <Link to="/"><button className="button-85" >&larr; Back Home</button></Link>
         </p>
       </nav>
-      <h1>Add a New Reaction</h1>
+      <h1 className="whiteText">Add a New Reaction</h1>
       <form
         onSubmit={event => {
           event.preventDefault();
@@ -37,7 +37,7 @@ function AddActivity() {
         }}
       >
         <div style={{ marginBottom: "1rem" }}>
-          <label>
+          <label className="whiteText">
           User Id
             <input
               type="text"
@@ -49,12 +49,8 @@ function AddActivity() {
           </label>
         </div>
 
-
-
-        
-
         <div style={{ marginBottom: "1rem" }}>
-          <label>
+          <label className="whiteText">
           Activity
             <select id="activity" name="activity" onChange={event => setActivity(event.target.value)}
               style={{ marginLeft: "1rem" }}>
@@ -63,6 +59,8 @@ function AddActivity() {
               <option value="LIKE">Like {`\u{1f44d}`}</option>
               <option value="CONFUSED">Confused {`\u{1f615}`}</option>
               <option value="DISLIKE">Dislike {`\u{1f44e}`}</option>
+              <option value="ENTERING">Entering {`\u{2600}`}</option>
+              <option value="EXITING">Exiting {`\u{1f315}`}</option>
             </select>
             
           </label>
@@ -70,7 +68,7 @@ function AddActivity() {
 
 
         <div style={{ marginBottom: "1rem" }}>
-          <label>
+          <label className="whiteText">
           Event Id
             <textarea
               name="eventId"
@@ -80,12 +78,15 @@ function AddActivity() {
             />
           </label>
         </div>
-        <input type="submit" value="Submit" />
+
+        
+        <button className="button-85"><input type="submit" value="Submit" /></button>
         {completedMessage && (
-          <p>
+          <p className="whiteText">
             {completedMessage}. <Link to="/">View posts &rarr;</Link>
           </p>
         )}
+        
       </form>
     </div>
   );

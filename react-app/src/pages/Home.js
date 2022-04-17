@@ -6,6 +6,18 @@ import React, { useEffect } from "react";
 import { GetUserActivities } from "../graphql/queries";
 import { ActivityAdded } from "../graphql/subscriptions";
 
+const emojiDict = {
+  "PARTY_FACE": `\u{1f973}`,
+  "LOVE": `\u{2764}`,
+  "LIKE": `\u{1f44d}`,
+  "CONFUSED": `\u{1f615}`,
+  "DISLIKE": `\u{1f44e}`,
+  "ENTERING": `\u{2600}`,
+  "EXITING":`\u{1f315}`
+};
+
+
+
 function Home() {
   const { data, loading, subscribeToMore } = useQuery(GetUserActivities);
 
@@ -31,9 +43,13 @@ function Home() {
   return (
     <div>
       <nav>
-        <p>
-          <Link to="/post/add">Add A Reaction</Link>
-        </p>
+        <div>
+        <h1>
+        <Link to="/activity/add"><button className="button-85" >Add A Reaction</button></Link>
+          
+        </h1>
+        </div>
+        
       </nav>
       {data["getUserActivites"].length ? (
         [...data.getUserActivites]
@@ -43,13 +59,17 @@ function Home() {
           )
           .map(({ activity,activityId, timestamp, user, event }) => (
             <article key={activityId}>
-              <h1>Reaction: {activity}</h1>
+              <div className="emojiDiv">
+              <div className={activity}>
+              <h1>Reaction: {activity} {emojiDict[activity]}</h1>
               <p>User Activity Id: {activityId}</p>
-              <p>By {user.name}</p>
-              <p>By {user.userId}</p>
-              <p>at event {event.eventId}</p>
-              <p>{moment(timestamp).format("h:mm A MMM D, YYYY")}</p>
+              <p>User {user.name}, ID: {user.userId}</p>
+              <p>Event "{event.name}", ID: {event.eventId}</p>
+              <p>{moment(new Date(timestamp)).format("h:mm A MMM D, YYYY")}</p>
+              </div>
+              </div>
             </article>
+            
           ))
       ) : (
         <p>No activity available!</p>

@@ -14,7 +14,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/post/add" component={AddActivity} />
+          <Route exact path="/activity/add" component={AddActivity} />
           <Route path="*" component={Home} />
         </Switch>
       </Router>

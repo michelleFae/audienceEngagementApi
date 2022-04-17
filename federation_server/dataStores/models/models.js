@@ -3,7 +3,7 @@ This file contains data. In the real-world, we would probably get this data from
 */
 
 // users: A list of User Objects. None of the feilds are nullable.
-export const users = [
+let users = [
     {
       userId: "A0",
       name: "Tania Lorina",
@@ -311,7 +311,7 @@ export const users = [
 
 // eventIdsToUserIds: A dictionary with eventIds for keys and a list of userIds for values.
 
-export const eventIdsToUserIds = {
+let eventIdsToUserIds = {
     "E0": ["A0", "A3", "A5", "A10", "A14", "A20", "A22", "A29", "A30", "A31", "A39", "A40", "A41", "A44", "A49"],
     "E1": ["A2", "A4", "A7", "A13", "A15", "A18", "A23", "A25", "A33", "A38", "A39"],
     "E2": ["A4", "A6", "A8", "A11", "A17", "A26", "A34", "A36", "A37", "A42", "A43", "A45", "A46"],
@@ -346,7 +346,7 @@ export const eventIdsToUserIds = {
   };
 
   // events: A list of Event Objects. None of the feilds are nullable.
-  export const events = [
+  let events = [
       {
         eventId: "E0",
         name: "Into the Unkown Web3 World",
@@ -530,7 +530,7 @@ export const eventIdsToUserIds = {
     ];
 
 // eventIdsToUserActivityIds: A dictionary with eventIds for keys and a list of UserActivityIds for values.
-export const eventIdsToUserActivityIds = {
+let eventIdsToUserActivityIds = {
   "E0": ["UA0", "UA1"],
   "E1": ["UA2"],
   "E2": ["UA3", "UA4", "UA5"],
@@ -564,7 +564,7 @@ export const eventIdsToUserActivityIds = {
 };
 
 // userActivityIdToUserId: A dictionary with userActivityId for keys and an userIds for values.
-export const userActivityIdToUserId = {
+let userActivityIdToUserId = {
   "UA0": "A0",
   "UA1": "A20",
   "UA2": "A2",
@@ -607,8 +607,61 @@ export const userActivityIdToUserId = {
   "UA39": "A19",
 };
 
+let userIdToActivityIds = {
+  "A0": ["UA0"],
+  "A1": [],
+  "A2": ["UA2"],
+  "A3": ["UA32"],
+  "A4": ["UA23", "UA33"],
+  "A5": [],
+  "A6": ["UA25"],
+  "A7": [],
+  "A8": ["UA3"],
+  "A9": [],
+  "A10": ["UA6"],
+  "A11": ["UA4"],
+  "A12": ["UA30"],
+  "A13": ["UA26"],
+  "A14": ["UA10"],
+  "A15": ["UA27"],
+  "A16": [],
+  "A17": ["UA24"],
+  "A18": ["UA16"],
+  "A19": ["UA39"],
+  "A20": ["UA1"],
+  "A21": ["UA17"],
+  "A22": ["UA34"],
+  "A23": ["UA31"],
+  "A24": [],
+  "A25": ["UA15"],
+  "A26": ["UA19"],
+  "A27": [],
+  "A28": ["UA38"],
+  "A29": ["UA20"],
+  "A30": ["UA21"],
+  "A31": [],
+  "A32": ["UA29"],
+  "A33": ["UA12", "UA35"],
+  "A34": ["UA5"],
+  "A35": [],
+  "A36": [],
+  "A37": [],
+  "A38": [],
+  "A39": ["UA22"],
+  "A40": ["UA11"],
+  "A41": ["UA18", "UA28"],
+  "A42": ["UA36"],
+  "A43": ["UA14", "UA37"],
+  "A44": [],
+  "A45": [],
+  "A46": ["UA13"],
+  "A47": [],
+  "A48": [],
+  "A49": [],
+}
+
 // userActivites: A list of userActivity Objects. None of the feilds are nullable.
-export const userActivites = [
+let userActivites = [
     {
       activityId: "UA0",
       timestamp: "2020-06-13T18:30:00.000Z",
@@ -811,3 +864,66 @@ export const userActivites = [
     },
     
   ];
+
+
+export function dbGetEvents() {
+    return events;
+}
+
+// export function dbSetEvents() {
+//   return events;
+// }
+
+export function dbGetUsers() {
+    return users;
+}
+
+export function dbAddUser(user) {
+  return users.push(user);
+}
+
+export function dbGetEventIdsToUserIds() {
+    return eventIdsToUserIds;
+}
+
+export function dbIsValidEvent(eventId) {
+    let eventIdRegex = /^E\d+$/;
+    const eventNumber = Number(eventId.match(/\d+/));
+    return eventIdRegex.test(eventId) && events.length > eventNumber;
+}
+
+export function dbIsValidUser(userId) {
+    let userIdRegex = /^A\d+$/;
+    const userNumber = Number(userId.match(/\d+/));
+    console.log("isV");
+    console.log( userIdRegex.test(userId));
+    console.log(userNumber);
+    console.log(users.slice(-1));
+    console.log(users.length );
+    return userIdRegex.test(userId) && users.length > userNumber;
+}
+
+export function dbIsValidUserActivityId(userActivitId) {
+    let userActivityIdRegex = /^UA\d+$/;
+    const userActivityNumber = Number(userActivitId.match(/\d+/));
+    return userActivityIdRegex.test(userActivitId) && userActivites.length > userActivityNumber;
+}
+
+
+export function dbGetUserActivityIdToUserId() {
+    return userActivityIdToUserId;
+}
+
+export function dbGetUserActivity() {
+    return userActivites;
+}
+
+export function dbUserIdToActivityIds() {
+    return userIdToActivityIds;
+}
+
+export function dbGetEventIdsToUserActivityIds() {
+    return eventIdsToUserActivityIds;
+}
+
+
