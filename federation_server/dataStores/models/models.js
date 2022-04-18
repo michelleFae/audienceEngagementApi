@@ -3,308 +3,308 @@ This file contains data. In the real-world, we would probably get this data from
 */
 
 // users: A list of User Objects. None of the feilds are nullable.
-let users = [
-    {
-      userId: "A0",
-      name: "Tania Lorina",
-      emailId: "loriLori13@jmail.com",
-      age: 18,
-    },
-    {
-      userId: "A1",
-      name: "Boitumelo Ayaan",
-      emailId: "Boitumelo1@jmail.com",
-      age: 38,
-    },
-    {
-      userId: "A2",
-      name: "Gayatri Padma",
-      emailId: "gpadma@dotmail.com",
-      age: 33,
-    },
-    {
-      userId: "A3",
-      name: "Jennifer Ismene",
-      emailId: "jIsmene21@chahoo.com",
-      age: 21,
-    },
-    {
-      userId: "A4",
-      name: "Júlio Anacleto",
-      emailId: "julioA00@dotmail.com",
-      age: 29,
-    },
-    {
-      userId: "A5",
-      name: "Delilah Javiera Botello",
-      emailId: "djb98@iceberg.net",
-      age: 48,
-    },
-    {
-      userId: "A6",
-      name: "Salli Vaishnavi Del Río",
-      emailId: "salliSpice2022@iceberg.net",
-      age: 23,
-    },
-    {
-      userId: "A7",
-      name: "Horatia Bushra Mortensen",
-      emailId: "morseen33@iceberg.net",
-      age: 21,
-    },
-    {
-      userId: "A8",
-      name: "Etel Tyrell",
-      emailId: "eyrell_elle_56@dotmail.com",
-      age: 40,
-    },
-    {
-      userId: "A9",
-      name: "Phyliss Droit",
-      emailId: "righDroi_2@jmail.com",
-      age: 51,
-    },
-    {
-      userId: "A10",
-      name: "Max Nelson",
-      emailId: "nelsonMax@megasoft.net",
-      age: 25,
-    },
-    {
-      userId: "A11",
-      name: "Maha Sheikh",
-      emailId: "Maha1@megasoft.net",
-      age: 32,
-    },
-    {
-      userId: "A12",
-      name: "Henricus Ó Coileáin",
-      emailId: "ocoileianHenry@chahoo.com",
-      age: 29,
-    },
-    {
-      userId: "A13",
-      name: "Nesim Keil",
-      emailId: "keilCoder1@jmail.com",
-      age: 19,
-    },
-    {
-      userId: "A14",
-      name: "Priya Movva",
-      emailId: "movvapriya22@dotmail.com",
-      age: 37,
-    },
-    {
-      userId: "A15",
-      name: "Sarah Burns",
-      emailId: "fireBurnz73@dotmail.com",
-      age: 27,
-    },
-    {
-      userId: "A16",
-      name: "Jamsheed Sundström",
-      emailId: "jamsheedsundstrom17@chahoo.com",
-      age: 18,
-    },
-    {
-      userId: "A17",
-      name: "Ángeles Gómez",
-      emailId: "gomezNex22@jmail.com",
-      age: 25,
-    },
-    {
-      userId: "A18",
-      name: "Gregoria Fontana",
-      emailId: "7gregoriaf@chahoo.com",
-      age: 35,
-    },
-    {
-      userId: "A19",
-      name: "Angelita Mora",
-      emailId: "profAMora@workeley.edu",
-      age: 42,
-    },
-    {
-      userId: "A20",
-      name: "Bo Mah",
-      emailId: "bomah67@chahoo.com",
-      age: 20,
-    },
-    {
-      userId: "A21",
-      name: "Yahui Song",
-      emailId: "yahuiSong@jmail.com",
-      age: 60,
-    },
-    {
-      userId: "A22",
-      name: "Keala Nguyen",
-      emailId: "kealaN92@chahoo.com",
-      age: 44,
-    },
-    {
-      userId: "A23",
-      name: "Malai Hoàng",
-      emailId: "mhoang1@workeley.edu",
-      age: 16,
-    },
-    {
-      userId: "A24",
-      name: "Kawehi Wattana",
-      emailId: "WaKawehi61@jmail.com",
-      age: 49,
-    },
-    {
-      userId: "A25",
-      name: "Marie-Noëlle Perrault",
-      emailId: "mnperrault32@abook.net",
-      age: 28,
-    },
-    {
-      userId: "A26",
-      name: "Hoa Denis",
-      emailId: "hoaBDenis21@jj.com",
-      age: 30,
-    },
-    {
-      userId: "A27",
-      name: "Nicole Rayne",
-      emailId: "nicole1998@iceberg.net",
-      age: 24,
-    },
-    {
-      userId: "A28",
-      name: "Fanny Colbert",
-      emailId: "colberWinzA8@jmail.com",
-      age: 55,
-    },
-    {
-      userId: "A29",
-      name: "Sung-Hyun Im",
-      emailId: "Sung-Hyun99@abook.net",
-      age: 43,
-    },
-    {
-      userId: "A30",
-      name: "Minh Nguyen",
-      emailId: "minhMinhN@scool.edu",
-      age: 17,
-    },
-    {
-      userId: "A31",
-      name: "Akanksha Bachchan",
-      emailId: "aBachaaaan0098@abook.net",
-      age: 39,
-    },
-    {
-      userId: "A32",
-      name: "Shailaja Das",
-      emailId: "sDas44571@jmail.com",
-      age: 32,
-    },
-    {
-      userId: "A33",
-      name: "Michelle D'Souza",
-      emailId: "mfae43@scool.edu",
-      age: 22,
-    },
-    {
-      userId: "A34",
-      name: "Nawra Ahmad",
-      emailId: "popcornAhmad88@abook.net",
-      age: 47,
-    },
-    {
-      userId: "A35",
-      name: "Bahija Hakim",
-      emailId: "hakimB84@megasoft.net",
-      age: 48,
-    },
-    {
-      userId: "A36",
-      name: "Toini Lahti",
-      emailId: "oini_lahi_41@megasoft.net",
-      age: 18,
-    },
-    {
-      userId: "A37",
-      name: "Aada Martikainen",
-      emailId: "AAADa@megasoft.net",
-      age: 25,
-    },
-    {
-      userId: "A38",
-      name: "Leena Järvi",
-      emailId: "leenaJarvi23@chahoo.com",
-      age: 34,
-    },
-    {
-      userId: "A39",
-      name: "Sveta Romanov",
-      emailId: "svemanov09@chahoo.com",
-      age: 52,
-    },
-    {
-      userId: "A40",
-      name: "Amintaou Okonkwo",
-      emailId: "aokonkwo@workeley.edu",
-      age: 18,
-    },
-    {
-      userId: "A41",
-      name: "Mia Shelton",
-      emailId: "profMShelton@workeley.edu",
-      age: 38,
-    },
-    {
-      userId: "A42",
-      name: "Kendall Airaldi",
-      emailId: "kAiraldi54@crown.edu",
-      age: 33,
-    },
-    {
-      userId: "A43",
-      name: "Darcy Kitchens",
-      emailId: "kitchensDarcy@crown.edu",
-      age: 23,
-    },
-    {
-      userId: "A44",
-      name: "Kamilla Jørgensen",
-      emailId: "kamillaJorgensen@scool.edu",
-      age: 25,
-    },
-    {
-      userId: "A45",
-      name: "Jessica Johansen",
-      emailId: "jjLovesCandy@chahoo.com",
-      age: 53,
-    },
-    {
-      userId: "A46",
-      name: "Gerallt Slusser",
-      emailId: "slusserGerallt@crown.edu",
-      age: 22,
-    },
-    {
-      userId: "A47",
-      name: "Anton Kavanah",
-      emailId: "kavanah_A@megasoft.net",
-      age: 23,
-    },
-    {
-      userId: "A48",
-      name: "Neelam Chlebek",
-      emailId: "chlebekNeelam@crown.edu",
-      age: 41,
-    },
-    {
-      userId: "A49",
-      name: "Mattie Schmitz",
-      emailId: "schmizzzM27@megasoft.net",
-      age: 50,
-    }
-  ];
+// let users = [
+//     {
+//       userId: "A0",
+//       name: "Tania Lorina",
+//       emailId: "loriLori13@jmail.com",
+//       age: 18,
+//     },
+//     {
+//       userId: "A1",
+//       name: "Boitumelo Ayaan",
+//       emailId: "Boitumelo1@jmail.com",
+//       age: 38,
+//     },
+//     {
+//       userId: "A2",
+//       name: "Gayatri Padma",
+//       emailId: "gpadma@dotmail.com",
+//       age: 33,
+//     },
+//     {
+//       userId: "A3",
+//       name: "Jennifer Ismene",
+//       emailId: "jIsmene21@chahoo.com",
+//       age: 21,
+//     },
+//     {
+//       userId: "A4",
+//       name: "Júlio Anacleto",
+//       emailId: "julioA00@dotmail.com",
+//       age: 29,
+//     },
+//     {
+//       userId: "A5",
+//       name: "Delilah Javiera Botello",
+//       emailId: "djb98@iceberg.net",
+//       age: 48,
+//     },
+//     {
+//       userId: "A6",
+//       name: "Salli Vaishnavi Del Río",
+//       emailId: "salliSpice2022@iceberg.net",
+//       age: 23,
+//     },
+//     {
+//       userId: "A7",
+//       name: "Horatia Bushra Mortensen",
+//       emailId: "morseen33@iceberg.net",
+//       age: 21,
+//     },
+//     {
+//       userId: "A8",
+//       name: "Etel Tyrell",
+//       emailId: "eyrell_elle_56@dotmail.com",
+//       age: 40,
+//     },
+//     {
+//       userId: "A9",
+//       name: "Phyliss Droit",
+//       emailId: "righDroi_2@jmail.com",
+//       age: 51,
+//     },
+//     {
+//       userId: "A10",
+//       name: "Max Nelson",
+//       emailId: "nelsonMax@megasoft.net",
+//       age: 25,
+//     },
+//     {
+//       userId: "A11",
+//       name: "Maha Sheikh",
+//       emailId: "Maha1@megasoft.net",
+//       age: 32,
+//     },
+//     {
+//       userId: "A12",
+//       name: "Henricus Ó Coileáin",
+//       emailId: "ocoileianHenry@chahoo.com",
+//       age: 29,
+//     },
+//     {
+//       userId: "A13",
+//       name: "Nesim Keil",
+//       emailId: "keilCoder1@jmail.com",
+//       age: 19,
+//     },
+//     {
+//       userId: "A14",
+//       name: "Priya Movva",
+//       emailId: "movvapriya22@dotmail.com",
+//       age: 37,
+//     },
+//     {
+//       userId: "A15",
+//       name: "Sarah Burns",
+//       emailId: "fireBurnz73@dotmail.com",
+//       age: 27,
+//     },
+//     {
+//       userId: "A16",
+//       name: "Jamsheed Sundström",
+//       emailId: "jamsheedsundstrom17@chahoo.com",
+//       age: 18,
+//     },
+//     {
+//       userId: "A17",
+//       name: "Ángeles Gómez",
+//       emailId: "gomezNex22@jmail.com",
+//       age: 25,
+//     },
+//     {
+//       userId: "A18",
+//       name: "Gregoria Fontana",
+//       emailId: "7gregoriaf@chahoo.com",
+//       age: 35,
+//     },
+//     {
+//       userId: "A19",
+//       name: "Angelita Mora",
+//       emailId: "profAMora@workeley.edu",
+//       age: 42,
+//     },
+//     {
+//       userId: "A20",
+//       name: "Bo Mah",
+//       emailId: "bomah67@chahoo.com",
+//       age: 20,
+//     },
+//     {
+//       userId: "A21",
+//       name: "Yahui Song",
+//       emailId: "yahuiSong@jmail.com",
+//       age: 60,
+//     },
+//     {
+//       userId: "A22",
+//       name: "Keala Nguyen",
+//       emailId: "kealaN92@chahoo.com",
+//       age: 44,
+//     },
+//     {
+//       userId: "A23",
+//       name: "Malai Hoàng",
+//       emailId: "mhoang1@workeley.edu",
+//       age: 16,
+//     },
+//     {
+//       userId: "A24",
+//       name: "Kawehi Wattana",
+//       emailId: "WaKawehi61@jmail.com",
+//       age: 49,
+//     },
+//     {
+//       userId: "A25",
+//       name: "Marie-Noëlle Perrault",
+//       emailId: "mnperrault32@abook.net",
+//       age: 28,
+//     },
+//     {
+//       userId: "A26",
+//       name: "Hoa Denis",
+//       emailId: "hoaBDenis21@jj.com",
+//       age: 30,
+//     },
+//     {
+//       userId: "A27",
+//       name: "Nicole Rayne",
+//       emailId: "nicole1998@iceberg.net",
+//       age: 24,
+//     },
+//     {
+//       userId: "A28",
+//       name: "Fanny Colbert",
+//       emailId: "colberWinzA8@jmail.com",
+//       age: 55,
+//     },
+//     {
+//       userId: "A29",
+//       name: "Sung-Hyun Im",
+//       emailId: "Sung-Hyun99@abook.net",
+//       age: 43,
+//     },
+//     {
+//       userId: "A30",
+//       name: "Minh Nguyen",
+//       emailId: "minhMinhN@scool.edu",
+//       age: 17,
+//     },
+//     {
+//       userId: "A31",
+//       name: "Akanksha Bachchan",
+//       emailId: "aBachaaaan0098@abook.net",
+//       age: 39,
+//     },
+//     {
+//       userId: "A32",
+//       name: "Shailaja Das",
+//       emailId: "sDas44571@jmail.com",
+//       age: 32,
+//     },
+//     {
+//       userId: "A33",
+//       name: "Michelle D'Souza",
+//       emailId: "mfae43@scool.edu",
+//       age: 22,
+//     },
+//     {
+//       userId: "A34",
+//       name: "Nawra Ahmad",
+//       emailId: "popcornAhmad88@abook.net",
+//       age: 47,
+//     },
+//     {
+//       userId: "A35",
+//       name: "Bahija Hakim",
+//       emailId: "hakimB84@megasoft.net",
+//       age: 48,
+//     },
+//     {
+//       userId: "A36",
+//       name: "Toini Lahti",
+//       emailId: "oini_lahi_41@megasoft.net",
+//       age: 18,
+//     },
+//     {
+//       userId: "A37",
+//       name: "Aada Martikainen",
+//       emailId: "AAADa@megasoft.net",
+//       age: 25,
+//     },
+//     {
+//       userId: "A38",
+//       name: "Leena Järvi",
+//       emailId: "leenaJarvi23@chahoo.com",
+//       age: 34,
+//     },
+//     {
+//       userId: "A39",
+//       name: "Sveta Romanov",
+//       emailId: "svemanov09@chahoo.com",
+//       age: 52,
+//     },
+//     {
+//       userId: "A40",
+//       name: "Amintaou Okonkwo",
+//       emailId: "aokonkwo@workeley.edu",
+//       age: 18,
+//     },
+//     {
+//       userId: "A41",
+//       name: "Mia Shelton",
+//       emailId: "profMShelton@workeley.edu",
+//       age: 38,
+//     },
+//     {
+//       userId: "A42",
+//       name: "Kendall Airaldi",
+//       emailId: "kAiraldi54@crown.edu",
+//       age: 33,
+//     },
+//     {
+//       userId: "A43",
+//       name: "Darcy Kitchens",
+//       emailId: "kitchensDarcy@crown.edu",
+//       age: 23,
+//     },
+//     {
+//       userId: "A44",
+//       name: "Kamilla Jørgensen",
+//       emailId: "kamillaJorgensen@scool.edu",
+//       age: 25,
+//     },
+//     {
+//       userId: "A45",
+//       name: "Jessica Johansen",
+//       emailId: "jjLovesCandy@chahoo.com",
+//       age: 53,
+//     },
+//     {
+//       userId: "A46",
+//       name: "Gerallt Slusser",
+//       emailId: "slusserGerallt@crown.edu",
+//       age: 22,
+//     },
+//     {
+//       userId: "A47",
+//       name: "Anton Kavanah",
+//       emailId: "kavanah_A@megasoft.net",
+//       age: 23,
+//     },
+//     {
+//       userId: "A48",
+//       name: "Neelam Chlebek",
+//       emailId: "chlebekNeelam@crown.edu",
+//       age: 41,
+//     },
+//     {
+//       userId: "A49",
+//       name: "Mattie Schmitz",
+//       emailId: "schmizzzM27@megasoft.net",
+//       age: 50,
+//     }
+//   ];
 
 
 
@@ -346,188 +346,188 @@ let eventIdsToUserIds = {
   };
 
   // events: A list of Event Objects. None of the feilds are nullable.
-  let events = [
-      {
-        eventId: "E0",
-        name: "Into the Unkown Web3 World",
-        description: "Sometimes you just gotta let it go.",
-        eventType: "POSTER_SESSION"
-      },
-      {
-        eventId: "E1",
-        eventType: "PRESENTATION",
-        name: "NFTs and the Environment",
-        description: "Dive into the details of NFTs and their environmental impact."
-      },
-      {
-        eventId: "E2",
-        eventType: "WORKSHOP",
-        name: "Rust is Among Us",
-        description: "Learn about the fundamentals of Rust."
-      },
-      {
-        eventId: "E3",
-        eventType: "POSTER_SESSION",
-        name: "Artificial Intelligence For All",
-        description: "How to use AI to make accessible technology."
-      },
-      {
-        eventId: "E4",
-        eventType: "PRESENTATION",
-        name: "Things I wish I new before joining the tech workforce",
-        description: "Hindsight is 20/20. And my 2020 was terrible."
-      },
-      {
-        eventId: "E5",
-        eventType: "PRESENTATION",
-        name: "Kudos to you for actually reading the data :)",
-        description: "You might wanna continue working on the rest of the project now :P"
-      },
-      {
-        eventId: "E6",
-        eventType: "WORKSHOP",
-        name: "DANCE DANCE!",
-        description: "A Fun dance workshop to relieve stress!"
-      },
-      {
-        eventId: "E7",
-        eventType: "POSTER_SESSION",
-        name: "Hopping into Grace Hopper",
-        description: "How to give a great Grace Hopper talk."
-      },
-      {
-        eventId: "E8",
-        eventType: "POSTER_SESSION",
-        name: "Change your Career",
-        description: "Switching careers is tricky - but not impossible. Learn how you can make a clean career switch."
-      },
-      {
-        eventId: "E9",
-        eventType: "WORKSHOP",
-        name: "Starting Straight Away",
-        description: "A workshop to help you learn how to adapt to change - starting straight away."
-      },
-      {
-        eventId: "E10",
-        eventType: "PANEL",
-        name: "Next is Now - WFH is now, so it might be next",
-        description: "This panel focuses on how to stay focused in a work from home environment."
-      },
-      {
-        eventId: "E11",
-        eventType: "PRESENTATION",
-        name: "Ethics of self driving vehicles",
-        description: "Ethical choices. Every second. Everyday. Learn how automated vehicles do this."
-      },
-      {
-        eventId: "E12",
-        eventType: "WORKSHOP",
-        name: "Code & Deploy Your Own Website",
-        description: "This workshop will help you start coding a vanilla javascript, react, and css website."
-      },
-      {
-        eventId: "E13",
-        eventType: "PANEL",
-        name: "Intro to Open Source",
-        description: "This panel brings together a group of diverse women in CS to introduce you to open source tech."
-      },
-      {
-        eventId: "E14",
-        eventType: "PRESENTATION",
-        name: "Have the most fun!",
-        description: "Learn how to have the most fun - on the job!"
-      },
-      {
-        eventId: "E15",
-        eventType: "PRESENTATION",
-        name: "How Technology Advocates for Underrepresented Voices",
-        description: "In this talk, learn about how technology can help us increase diversity."
-      },
-      {
-        eventId: "E16",
-        eventType: "WORKSHOP",
-        name: "Intern Networking Session",
-        description: "Get to know your peers at this intern networking session!"
-      },
-      {
-        eventId: "E17",
-        eventType: "POSTER_SESSION",
-        name: "You're Asking the Wrong Questions!",
-        description: "Learn how to ask the right ones"
-      },
-      {
-        eventId: "E18",
-        eventType: "POSTER_SESSION",
-        name: "Mixed Reality Research",
-        description: "Have you ever wondered what the difference is between AR, VR, and mixed reality? Well - it's time to find out!"
-      },
-      {
-        eventId: "E19",
-        eventType: "WORKSHOP",
-        name: "Turn a Social Club into an Impactful Program",
-        description: "Create a sense of community at your company."
-      },
-      {
-        eventId: "E20",
-        eventType: "POSTER_SESSION",
-        name: "Next is Inclusion",
-        description: "Inclusion is now. Inclusion is the future. What can you do to improve it?"
-      },
-      {
-        eventId: "E21",
-        eventType: "PRESENTATION",
-        name: "You let me down - but I won't let you down",
-        description: "How to work with people you're not a fan of."
-      },
-      {
-        eventId: "E22",
-        eventType: "WORKSHOP",
-        name: "Change Agents",
-        description: "Learn about to drive change and make next, now."
-      },
-      {
-        eventId: "E23",
-        eventType: "POSTER_SESSION",
-        name: "Research - C++ Smart Pointer Improvements",
-        description: "Dive into the novel C++ Smart Pointer Changes"
-      },
-      {
-        eventId: "E24",
-        eventType: "MENTORING_CIRCLES",
-        name: "Do you know what's wrong?",
-        description: "Join us and learn how to identify the now problems and fix them asap."
-      },
-      {
-        eventId: "E25",
-        eventType: "PRESENTATION",
-        name: "Git Revert",
-        description: "Undo mistakes now - so what's next is fine"
-      },
-      {
-        eventId: "E26",
-        eventType: "WORKSHOP",
-        name: "Eat & Meet!",
-        description: "Eat & Meet fellow people in tech who all advocate for a more inclusive environment."
-      },
-      {
-        eventId: "E27",
-        eventType: "POSTER_SESSION",
-        name: "GraphQL Basics",
-        description: "GraphQL Basics"
-      },
-      {
-        eventId: "E28",
-        eventType: "POSTER_SESSION",
-        name: "Fireship Basics",
-        description: "An intro to fireship and why its great."
-      },
-      {
-        eventId: "E29",
-        eventType: "TECH_MEETUP",
-        name: "NP Hard",
-        description: "Learn how to prove P=NP ... just kidding :D"
-      },
-    ];
+  // let events = [
+  //     {
+  //       eventId: "E0",
+  //       name: "Into the Unkown Web3 World",
+  //       description: "Sometimes you just gotta let it go.",
+  //       eventType: "POSTER_SESSION"
+  //     },
+  //     {
+  //       eventId: "E1",
+  //       eventType: "PRESENTATION",
+  //       name: "NFTs and the Environment",
+  //       description: "Dive into the details of NFTs and their environmental impact."
+  //     },
+  //     {
+  //       eventId: "E2",
+  //       eventType: "WORKSHOP",
+  //       name: "Rust is Among Us",
+  //       description: "Learn about the fundamentals of Rust."
+  //     },
+  //     {
+  //       eventId: "E3",
+  //       eventType: "POSTER_SESSION",
+  //       name: "Artificial Intelligence For All",
+  //       description: "How to use AI to make accessible technology."
+  //     },
+  //     {
+  //       eventId: "E4",
+  //       eventType: "PRESENTATION",
+  //       name: "Things I wish I new before joining the tech workforce",
+  //       description: "Hindsight is 20/20. And my 2020 was terrible."
+  //     },
+  //     {
+  //       eventId: "E5",
+  //       eventType: "PRESENTATION",
+  //       name: "Kudos to you for actually reading the data :)",
+  //       description: "You might wanna continue working on the rest of the project now :P"
+  //     },
+  //     {
+  //       eventId: "E6",
+  //       eventType: "WORKSHOP",
+  //       name: "DANCE DANCE!",
+  //       description: "A Fun dance workshop to relieve stress!"
+  //     },
+  //     {
+  //       eventId: "E7",
+  //       eventType: "POSTER_SESSION",
+  //       name: "Hopping into Grace Hopper",
+  //       description: "How to give a great Grace Hopper talk."
+  //     },
+  //     {
+  //       eventId: "E8",
+  //       eventType: "POSTER_SESSION",
+  //       name: "Change your Career",
+  //       description: "Switching careers is tricky - but not impossible. Learn how you can make a clean career switch."
+  //     },
+  //     {
+  //       eventId: "E9",
+  //       eventType: "WORKSHOP",
+  //       name: "Starting Straight Away",
+  //       description: "A workshop to help you learn how to adapt to change - starting straight away."
+  //     },
+  //     {
+  //       eventId: "E10",
+  //       eventType: "PANEL",
+  //       name: "Next is Now - WFH is now, so it might be next",
+  //       description: "This panel focuses on how to stay focused in a work from home environment."
+  //     },
+  //     {
+  //       eventId: "E11",
+  //       eventType: "PRESENTATION",
+  //       name: "Ethics of self driving vehicles",
+  //       description: "Ethical choices. Every second. Everyday. Learn how automated vehicles do this."
+  //     },
+  //     {
+  //       eventId: "E12",
+  //       eventType: "WORKSHOP",
+  //       name: "Code & Deploy Your Own Website",
+  //       description: "This workshop will help you start coding a vanilla javascript, react, and css website."
+  //     },
+  //     {
+  //       eventId: "E13",
+  //       eventType: "PANEL",
+  //       name: "Intro to Open Source",
+  //       description: "This panel brings together a group of diverse women in CS to introduce you to open source tech."
+  //     },
+  //     {
+  //       eventId: "E14",
+  //       eventType: "PRESENTATION",
+  //       name: "Have the most fun!",
+  //       description: "Learn how to have the most fun - on the job!"
+  //     },
+  //     {
+  //       eventId: "E15",
+  //       eventType: "PRESENTATION",
+  //       name: "How Technology Advocates for Underrepresented Voices",
+  //       description: "In this talk, learn about how technology can help us increase diversity."
+  //     },
+  //     {
+  //       eventId: "E16",
+  //       eventType: "WORKSHOP",
+  //       name: "Intern Networking Session",
+  //       description: "Get to know your peers at this intern networking session!"
+  //     },
+  //     {
+  //       eventId: "E17",
+  //       eventType: "POSTER_SESSION",
+  //       name: "You're Asking the Wrong Questions!",
+  //       description: "Learn how to ask the right ones"
+  //     },
+  //     {
+  //       eventId: "E18",
+  //       eventType: "POSTER_SESSION",
+  //       name: "Mixed Reality Research",
+  //       description: "Have you ever wondered what the difference is between AR, VR, and mixed reality? Well - it's time to find out!"
+  //     },
+  //     {
+  //       eventId: "E19",
+  //       eventType: "WORKSHOP",
+  //       name: "Turn a Social Club into an Impactful Program",
+  //       description: "Create a sense of community at your company."
+  //     },
+  //     {
+  //       eventId: "E20",
+  //       eventType: "POSTER_SESSION",
+  //       name: "Next is Inclusion",
+  //       description: "Inclusion is now. Inclusion is the future. What can you do to improve it?"
+  //     },
+  //     {
+  //       eventId: "E21",
+  //       eventType: "PRESENTATION",
+  //       name: "You let me down - but I won't let you down",
+  //       description: "How to work with people you're not a fan of."
+  //     },
+  //     {
+  //       eventId: "E22",
+  //       eventType: "WORKSHOP",
+  //       name: "Change Agents",
+  //       description: "Learn about to drive change and make next, now."
+  //     },
+  //     {
+  //       eventId: "E23",
+  //       eventType: "POSTER_SESSION",
+  //       name: "Research - C++ Smart Pointer Improvements",
+  //       description: "Dive into the novel C++ Smart Pointer Changes"
+  //     },
+  //     {
+  //       eventId: "E24",
+  //       eventType: "MENTORING_CIRCLES",
+  //       name: "Do you know what's wrong?",
+  //       description: "Join us and learn how to identify the now problems and fix them asap."
+  //     },
+  //     {
+  //       eventId: "E25",
+  //       eventType: "PRESENTATION",
+  //       name: "Git Revert",
+  //       description: "Undo mistakes now - so what's next is fine"
+  //     },
+  //     {
+  //       eventId: "E26",
+  //       eventType: "WORKSHOP",
+  //       name: "Eat & Meet!",
+  //       description: "Eat & Meet fellow people in tech who all advocate for a more inclusive environment."
+  //     },
+  //     {
+  //       eventId: "E27",
+  //       eventType: "POSTER_SESSION",
+  //       name: "GraphQL Basics",
+  //       description: "GraphQL Basics"
+  //     },
+  //     {
+  //       eventId: "E28",
+  //       eventType: "POSTER_SESSION",
+  //       name: "Fireship Basics",
+  //       description: "An intro to fireship and why its great."
+  //     },
+  //     {
+  //       eventId: "E29",
+  //       eventType: "TECH_MEETUP",
+  //       name: "NP Hard",
+  //       description: "Learn how to prove P=NP ... just kidding :D"
+  //     },
+  //   ];
 
 // eventIdsToUserActivityIds: A dictionary with eventIds for keys and a list of UserActivityIds for values.
 let eventIdsToUserActivityIds = {
@@ -866,42 +866,42 @@ let userActivites = [
   ];
 
 
-export function dbGetEvents() {
-    return events;
-}
+// export function dbGetEvents() {
+//     return events;
+// }
 
 // export function dbSetEvents() {
 //   return events;
 // }
 
-export function dbGetUsers() {
-    return users;
-}
+// export function dbGetUsers() {
+//     return users;
+// }
 
-export function dbAddUser(user) {
-  return users.push(user);
-}
+// export function dbAddUser(user) {
+//   return users.push(user);
+// }
 
 export function dbGetEventIdsToUserIds() {
     return eventIdsToUserIds;
 }
 
-export function dbIsValidEvent(eventId) {
-    let eventIdRegex = /^E\d+$/;
-    const eventNumber = Number(eventId.match(/\d+/));
-    return eventIdRegex.test(eventId) && events.length > eventNumber;
-}
+// export function dbIsValidEvent(eventId) {
+//     let eventIdRegex = /^E\d+$/;
+//     const eventNumber = Number(eventId.match(/\d+/));
+//     return eventIdRegex.test(eventId) && events.length > eventNumber;
+// }
 
-export function dbIsValidUser(userId) {
-    let userIdRegex = /^A\d+$/;
-    const userNumber = Number(userId.match(/\d+/));
-    console.log("isV");
-    console.log( userIdRegex.test(userId));
-    console.log(userNumber);
-    console.log(users.slice(-1));
-    console.log(users.length );
-    return userIdRegex.test(userId) && users.length > userNumber;
-}
+// export function dbIsValidUser(userId) {
+//     let userIdRegex = /^A\d+$/;
+//     const userNumber = Number(userId.match(/\d+/));
+//     console.log("isV");
+//     console.log( userIdRegex.test(userId));
+//     console.log(userNumber);
+//     console.log(users.slice(-1));
+//     console.log(users.length );
+//     return userIdRegex.test(userId) && users.length > userNumber;
+// }
 
 export function dbIsValidUserActivityId(userActivitId) {
     let userActivityIdRegex = /^UA\d+$/;

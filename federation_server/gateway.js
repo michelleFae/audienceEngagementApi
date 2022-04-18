@@ -23,7 +23,7 @@ const { PORT = 5000 } = process.env;
   // Pass the ApolloGateway to the ApolloServer constructor. We use a similar setup for vanilla Apollo GraphQL. See https://www.apollographql.com/docs/apollo-server/api/apollo-server/ for more information.
   const server = new ApolloServer({
     gateway,
-    debug: false,
+    debug: true,
     introspection: true,
     validationRules: [depthLimit(7)]
   });
