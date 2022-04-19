@@ -11,7 +11,7 @@ body {
 
 .PARTY_FACE {
   border-radius: 25px;
-  background-color: #ffb1b1;
+  background-color: #d105ff;
   margin: 2px;
   width: 80%;
   display: inline-block;  
@@ -136,7 +136,7 @@ body {
 
 
 /* CSS */
-.button-85 {
+.button-rainbow {
   padding: 0.6em 2em;
   border: none;
   outline: none;
@@ -151,7 +151,7 @@ body {
   touch-action: manipulation;
 }
 
-.button-85:before {
+.button-rainbow:before {
   content: "";
   background: linear-gradient(
     45deg,
@@ -174,12 +174,12 @@ body {
   -webkit-filter: blur(5px);
   width: calc(100% + 4px);
   height: calc(100% + 4px);
-  animation: glowing-button-85 20s linear infinite;
+  animation: glowing-button-rainbow 20s linear infinite;
   transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
 }
 
-@keyframes glowing-button-85 {
+@keyframes glowing-button-rainbow {
   0% {
     background-position: 0 0;
   }
@@ -191,7 +191,7 @@ body {
   }
 }
 
-.button-85:after {
+.button-rainbow:after {
   z-index: -1;
   content: "";
   position: absolute;

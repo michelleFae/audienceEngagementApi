@@ -19,7 +19,8 @@ const emojiDict = {
 
 
 function Home() {
-  const { data, loading, subscribeToMore } = useQuery(GetUserActivities);
+  const { data, loading, subscribeToMore, error } = useQuery(GetUserActivities);
+  
 
   useEffect(() => {
     const unsubscribe = subscribeToMore({
@@ -35,9 +36,13 @@ function Home() {
     });
     return () => unsubscribe();
   }, [subscribeToMore]);
+  if (error) {
+    console.log( `Error! ${error.message}`);
+    return <p  className="whiteText">Could not connect to the server. Please try again later.</p>;
+  }
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <p  className="whiteText">Loading...</p>;
   }
 
   return (
@@ -45,7 +50,7 @@ function Home() {
       <nav>
         <div>
         <h1>
-        <Link to="/activity/add"><button className="button-85" >Add A Reaction</button></Link>
+        <Link to="/activity/add"><button className="button-rainbow" >Add A Reaction</button></Link>
           
         </h1>
         </div>
@@ -72,7 +77,7 @@ function Home() {
             
           ))
       ) : (
-        <p>No activity available!</p>
+        <p className="whiteText">No activity available!</p>
       )}
     </div>
   );

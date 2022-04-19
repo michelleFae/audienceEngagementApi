@@ -93,5 +93,11 @@ export async function dbIsValidUser(usersClient, userId) {
     }
     await usersClient.connect();
     const numUsers = await usersClient.db("users").collection("users").countDocuments({});
+
+    if (numUsers <= userNumber) {
+        throw new UserInputError(`Invalid userId ${userId}.`, {
+            invalidArgs: ["userId"],
+        });
+    }
     return numUsers > userNumber;   
 }

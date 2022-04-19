@@ -14,7 +14,7 @@ const {
 export function dbCreateEventsClient() {
     const { MongoClient, ServerApiVersion } = require('mongodb');
     const uri = "mongodb+srv://mdsouza43:mSingalong13!@cluster0.eibst.mongodb.net/events?retryWrites=true&w=majority";
-    const eventsClient = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+    const eventsClient = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1,  connectTimeoutMS: 4800000, serverSelectionTimeoutMS: 4800000 });
     return eventsClient;
 }
 
@@ -107,6 +107,12 @@ export async function dbIsValidEvent(eventsClient, eventId) {
     }
     await eventsClient.connect();
     const numEvents = await eventsClient.db("events").collection("events").countDocuments({});
+
+    if (numEvents <= eventNumber) {
+        throw new UserInputError(`Invalid event id ${eventId}.`, {
+            invalidArgs: ["eventId"],
+        });
+    }
     return numEvents > eventNumber;
 }
 

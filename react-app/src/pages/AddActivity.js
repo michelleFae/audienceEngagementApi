@@ -10,7 +10,8 @@ function AddActivity() {
   const [userId, setUserId] = useState("");
   const [completedMessage, setCompletedMessage] = useState("");
 
-  const [addActivity] = useMutation(AddUserActivityMutation, {
+  const mutation = useMutation(AddUserActivityMutation, {
+
     onCompleted() {
       setEventId("");
       setUserId("");
@@ -20,12 +21,14 @@ function AddActivity() {
       setCompletedMessage("Error. Make sure user id (e.g. 'A3') and event id (e.g. 'E1') belongs to a valid user/event");
     }
   });
+  const [addActivity] = mutation;
+
 
   return (
     <div>
       <nav>
         <p>
-        <Link to="/"><button className="button-85" >&larr; Back Home</button></Link>
+        <Link to="/"><button className="button-rainbow" >&larr; Back Home</button></Link>
         </p>
       </nav>
       <h1 className="whiteText">Add a New Reaction</h1>
@@ -78,12 +81,11 @@ function AddActivity() {
             />
           </label>
         </div>
-
         
-        <button className="button-85"><input type="submit" value="Submit" /></button>
+        <button className="button-rainbow"><input type="submit" disabled={mutation[1]["loading"]} value={mutation[1]["loading"]? "Sending": "Submit"} /></button>
         {completedMessage && (
           <p className="whiteText">
-            {completedMessage}. <Link to="/">View posts &rarr;</Link>
+            {completedMessage}. <a href="/">View posts &rarr;</a>
           </p>
         )}
         

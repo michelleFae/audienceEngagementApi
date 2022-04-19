@@ -30,8 +30,9 @@ If you do not, follow these instructions to install npm:
     ```bash
     redis-server
     ```
-2) Bring up all service: 
+2) In a different terminal, bring up all service: 
     ```bash
+    cd federation_server
     npm run start-services
     ```
     
@@ -44,6 +45,7 @@ If you do not, follow these instructions to install npm:
 
 3) In another terminal, bring up the gateway:
     ```bash
+    cd federation_server
     npm run start-gateway
     ```
     You should see:
@@ -59,14 +61,14 @@ If you do not, follow these instructions to install npm:
     You can use `Control+C` to terminate the server & gateway.
     ![](https://i.imgur.com/wplk28N.png)
 
-5) Navigate to the subscription_server/src directory and bring up that service.
+5) In a different terminal, navigate to the subscription_server/src directory and bring up that service.
     ```bash
-    cd ../subscription_server/src
+    cd subscription_server/src
     npm run start
     ```
-6) You can test the subscriptions by bringing up the react app.
+6) In another terminal, you can test the subscriptions by bringing up the react app.
     ```bash
-    cd ../../react-app
+    cd react-app
     npm run start
     ```
     

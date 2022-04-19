@@ -8,14 +8,10 @@ export const UserActivityFields = gql`
     event {
       eventId
       name
-      description
-      eventType
     }
     user {
       userId
       name
-      emailId
-      age
     }
   }
 `;
