@@ -18,8 +18,6 @@ export function dbCreateEventsClient() {
     return eventsClient;
 }
 
-//todo await eventsClient.close();
-
 export async function dbGetEvents(eventsClient, query={}, last=99, offset=0) {
     await eventsClient.connect();
     const cursor = await eventsClient.db("events").collection("events").find(query, { projection: { _id: 0 } }).sort({_id: -1}).skip(offset).limit(last);
